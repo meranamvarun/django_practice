@@ -1,9 +1,11 @@
+{% load staticfiles %}
 <!Doctype html>
 <html lang="en">
 <head>
+    <div>
+    <img src="{% static "assets/images/a.png" %}">
+    </div>
     <title>{% block title %}My Base Template{% endblock %}</title>
-    <img src="{% static "assets/images/a.png" %}" />
-
     <style type="text/css">
         body {
             text-align: centre;
