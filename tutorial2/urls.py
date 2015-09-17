@@ -22,8 +22,37 @@ from  django.contrib import admin
 
 admin.autodiscover()
 
+#from django.contrib.auth import views as auth_views 
+
 urlpatterns = patterns('',
     (r'^articles/',include('article.urls')),
     url(r'^$','tutorial2.views.home'),
     url(r'^admin/',include(admin.site.urls)),
+    url(r'^accounts/login/$', 'tutorial2.views.login'),
+    url(r'^accounts/auth/$', 'tutorial2.views.auth_view'),
+    url(r'^accounts/logout/$', 'tutorial2.views.logout'),
+    url(r'^accounts/loggedin/$', 'tutorial2.views.loggedin'),
+    url(r'^accounts/invalid/$', 'tutorial2.views.invalid_login'),
 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
