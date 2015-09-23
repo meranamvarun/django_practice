@@ -33,6 +33,8 @@ urlpatterns = patterns('',
     url(r'^accounts/logout/$', 'tutorial2.views.logout'),
     url(r'^accounts/loggedin/$', 'tutorial2.views.loggedin'),
     url(r'^accounts/invalid/$', 'tutorial2.views.invalid_login'),
+    url(r'^accounts/register/$','tutorial2.views.register_user'),
+    url(r'^accounts/register_success/$','tutorial2.views.register_success'),
 )
 
 
